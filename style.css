@@ -16,7 +16,6 @@
   transition: 0.2s;
   font-family: "Bungee Spice", sans-serif;
   font-weight: 600;
-  font-style: normal;
 }
 
 body {
@@ -120,12 +119,26 @@ section {
   border-radius: 2rem;
 }
 
+.btn-inicio {
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
 .home-container {
   background-image: url(https://i.pinimg.com/736x/5c/28/37/5c2837015b352088028ce39b291637a6.jpg);
   background-size: cover;
-  display: flex;
-  max-width: 100%;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .home-container section {
@@ -222,7 +235,7 @@ section {
   background-color: var(--main-color);
 }
 
-.menu .box-container .box:hover > * {
+.menu .box-container .box:hover {
   color: var(--black);
 }
 
