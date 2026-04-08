@@ -313,8 +313,44 @@ section {
   font-size: 1.5rem;
 }
 
-/*Responsividade*/
+.fut {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 8rem;
+  gap: 2rem;
+  font-size: 5rem;
+}
 
+.fut span {
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.galeria {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 10px;
+}
+.gale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.galeria .gale img {
+  display: flex;
+  border-radius: none;
+  max-width: 100%;
+  margin-top: 5px 10px;
+}
+
+/*Responsividade*/
+/**/
 @media (max-width: 768px) {
   :root {
     font-size: 48%;
