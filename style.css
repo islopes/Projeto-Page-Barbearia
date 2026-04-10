@@ -54,7 +54,7 @@ section {
   right: 0;
   z-index: 1000;
   border-bottom: var(--border);
-  background-color: rgba(0, 0, 0, 0.928);
+  background-color: rgba(0, 22, 144, 0.831);
 }
 
 .header section {
@@ -110,7 +110,7 @@ section {
 .btn {
   background-color: var(--main-color);
   color: var(--white);
-  padding: 1rem 3rem;
+  padding: 10px 20px;
   font-size: 1.7rem;
   cursor: pointer;
   margin-top: 1rem;
@@ -122,13 +122,13 @@ section {
 .btn-inicio {
   background-color: var(--main-color);
   color: var(--white);
-  padding: 1rem 3rem;
+  padding: 10px 20px;
   font-size: 1.7rem;
   cursor: pointer;
-  margin-top: 1rem;
   display: inline-block;
-  justify-content: center;
   align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
 }
 
 .home-container {
@@ -140,15 +140,35 @@ section {
   justify-content: center;
   max-width: 100%;
 }
+/* Define o movimento */
 
 .home-container section {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  padding: 50px;
 }
 
 .content {
   max-width: 60rem;
+  display: inline-block;
+  align-items: center;
+  flex-direction: column;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Aplica ao elemento */
+.content {
+  animation: aparecer 0.8s ease-out forwards;
 }
 
 .content h3 {
@@ -198,7 +218,9 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
   cursor: pointer;
+  background-color: var(--main-color);
 }
+
 .menu {
   font-size: 100%;
 }
