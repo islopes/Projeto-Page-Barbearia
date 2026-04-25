@@ -54,11 +54,11 @@ section {
   right: 0;
   z-index: 1000;
   border-bottom: var(--border);
-  background: #152331; /* fallback for old browsers */
+  background: #f3f6fa; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #000000,
-    #152331
+    #ccd1d6
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
@@ -79,7 +79,7 @@ section {
   margin: 0 1rem;
   font-size: 1.8rem;
   color: #fff;
-  margin-top: 10rem;
+  margin-top: 1rem;
 }
 
 .navbar a:hover {
@@ -90,7 +90,8 @@ section {
 }
 
 .header .logo img {
-  height: 6rem;
+  height: 5rem;
+  border-radius: 0rem 0rem 2rem 2rem;
 }
 
 .icons {
@@ -142,24 +143,15 @@ section {
 }
 
 .home-container {
-  background: #8e0e00; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #1f1c18,
-    #8e0e00
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #1f1c18,
-    #8e0e00
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-image: url(img/Gemini_Generated_Image_l6n6f6l6n6f6l6n6.png);
   background-size: cover;
   background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 100%;
+  top: 10px;
+  bottom: 10px;
 }
 
 .home-container section {
@@ -413,14 +405,21 @@ section {
   font-size: 2rem;
 }
 .caixa {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
 }
-/* Container dos Itens */
+
 .container-carrossel {
+}
+.Back {
+  background: #000000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.44) 0%,
+    rgba(26, 26, 26, 1) 69%,
+    rgba(252, 176, 69, 0) 100%
+  );
 }
 
 /* Estilo do Item Individual */
@@ -467,7 +466,7 @@ section {
 
 /*Responsividade*/
 /**/
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   :root {
     font-size: 48%;
   }
