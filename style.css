@@ -180,7 +180,7 @@ section {
 
 /* Aplica ao elemento */
 .content {
-  animation: aparecer 0.8s ease-out forwards;
+  animation: aparecer 0.9s ease-out forwards;
 }
 
 .content h3 {
@@ -202,6 +202,7 @@ section {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 4rem;
+  animation: aparecer 0.9s ease-in-out;
 }
 
 .title span {
@@ -230,6 +231,18 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
   cursor: pointer;
+  border-radius: 10px;
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 3s;
+}
+
+.aparecer {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 3s;
 }
 
 .menu {
@@ -243,7 +256,7 @@ section {
 }
 
 .menu .box-container .box img {
-  height: 10rem;
+  height: 20rem;
 }
 
 .menu .box-container .box h3 {
@@ -370,6 +383,7 @@ section {
   max-width: 1200px;
   gap: 10px;
 }
+
 .gale {
   display: flex;
   justify-content: center;
