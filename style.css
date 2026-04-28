@@ -430,6 +430,15 @@ section {
   justify-content: center;
   gap: 3rem;
   overflow: hidden;
+  border-radius: 70px;
+  background: #000000;
+  background: #000000;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.44) 0%,
+    rgba(26, 26, 26, 0) 70%,
+    rgba(252, 176, 69, 0) 100%
+  );
 }
 
 .container-carrossel {
@@ -444,7 +453,10 @@ section {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
+  }
+  0% {
+    transform: translateX(100%);
   }
 }
 
@@ -516,9 +528,9 @@ section {
     flex-direction: column;
     background: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.44) 0%,
-      rgb(158, 30, 30) 69%,
-      rgba(252, 176, 69, 0) 100%
+      rgba(206, 10, 10, 0.44) 0%,
+      rgb(247, 15, 15) 69%,
+      rgba(245, 7, 7, 0.628) 100%
     );
     padding: 1rem 2rem;
     border-top: var(--border);
