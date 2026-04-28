@@ -146,12 +146,13 @@ section {
   background-image: url(img/Gemini_Generated_Image_l6n6f6l6n6f6l6n6.png);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  top: 10px;
-  bottom: 10px;
+  top: 10rem;
+  bottom: 10rem;
 }
 
 .home-container section {
@@ -418,14 +419,34 @@ section {
   align-items: center;
   font-size: 2rem;
 }
+.title-times {
+  color: var(--main-color);
+  margin-top: 20px;
+  text-transform: uppercase;
+}
 .caixa {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  overflow: hidden;
 }
 
 .container-carrossel {
+  display: flex;
+  width: max-content;
+  padding-right: 5rem;
+  animation: scroll 15s linear infinite;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .Back {
   background: #000000;
   background: linear-gradient(
@@ -492,7 +513,12 @@ section {
     left: 0;
     right: 0;
     flex-direction: column;
-    background-color: #010103;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.44) 0%,
+      rgb(158, 30, 30) 69%,
+      rgba(252, 176, 69, 0) 100%
+    );
     padding: 1rem 2rem;
     border-top: var(--border);
     border-bottom: var(--border);
@@ -512,5 +538,9 @@ section {
 
   .icons .what {
     display: none;
+  }
+
+  .home-container {
+    background-size: cover;
   }
 }
