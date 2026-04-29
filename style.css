@@ -430,7 +430,7 @@ section {
   justify-content: center;
   gap: 3rem;
   overflow: hidden;
-  border-radius: 70px;
+
   background: #000000;
   background: #000000;
   background: radial-gradient(
@@ -514,7 +514,7 @@ section {
 
 /*Responsividade*/
 /**/
-@media (max-width: 728px) {
+@media (max-width: 769px) {
   :root {
     font-size: 48%;
   }
@@ -554,9 +554,5 @@ section {
   }
 
   .home-container {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
