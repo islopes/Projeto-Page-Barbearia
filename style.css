@@ -142,18 +142,16 @@ section {
   border-radius: 2rem;
 }
 
-.home-container {
-  background-image: url(img/Gemini_Generated_Image_l6n6f6l6n6f6l6n6.png);
+.home-image {
+  /* background-image: url(img/Gemini_Generated_Image_l6n6f6l6n6f6l6n6.png);*/
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
-  top: 10rem;
-  bottom: 10rem;
+  width: 100%;
+  margin-top: 9rem;
 }
 
 .home-container section {
