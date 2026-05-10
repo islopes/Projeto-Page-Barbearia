@@ -1,6 +1,10 @@
 const menuBtn = document.querySelector('.menu-btn'); /*vou no html e mapeo a class mencionada*/
 const navBar = document.querySelector(".navbar");
 
+
+
+
+
 const myObserver = new IntersectionObserver ((entries) => {
    entries.forEach((entry) =>{
      if (entry.isIntersecting){
