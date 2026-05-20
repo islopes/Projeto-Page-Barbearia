@@ -13,7 +13,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.5s;
   font-family: "Bungee Spice", sans-serif;
   font-weight: 600;
 }
@@ -268,11 +268,10 @@ section {
   gap: 1.5rem;
   cursor: pointer;
   border-radius: 10px;
-  opacity: 0;
+  opacity: 50%;
   filter: blur(15px);
   transform: translateX(-100%);
   transition: all 3s;
-
   border-radius: 50px;
 }
 
@@ -415,8 +414,10 @@ section {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
-  max-width: 1200px;
+  align-items: center;
+  max-width: 100%;
   gap: 10px;
+  width: 98%;
 }
 
 .gale {
