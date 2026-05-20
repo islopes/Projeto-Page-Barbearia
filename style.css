@@ -529,7 +529,7 @@ section {
 
 /*Responsividade*/
 /**/
-@media (max-width: 1010px) {
+@media (max-width: 768px) {
   :root {
     font-size: 48%;
   }
@@ -541,12 +541,8 @@ section {
     left: 0;
     right: 0;
     flex-direction: column;
-    background: linear-gradient(
-      90deg,
-      rgba(206, 10, 10, 0.44) 0%,
-      rgb(247, 15, 15) 69%,
-      rgba(245, 7, 7, 0.628) 100%
-    );
+    background-image: url(img/Seleção.webp);
+    background-size: cover;
     padding: 1rem 2rem;
     border-top: var(--border);
     border-bottom: var(--border);
@@ -576,5 +572,8 @@ section {
     align-items: center;
     gap: 3rem;
     max-width: 100%;
+  }
+  .bar {
+    background-color: yellow;
   }
 }
