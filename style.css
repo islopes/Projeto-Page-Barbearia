@@ -574,7 +574,6 @@ section {
     display: grid;
     justify-items: center;
     align-items: center;
-    padding: none;
     gap: 3rem;
     max-width: 100%;
   }
